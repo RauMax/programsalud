@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box;
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 body {
@@ -23,4 +34,18 @@ input {
   margin-right: auto;
   margin-left: auto;
   display: block;
+}
+
+input:focus {
+  border: 3px solid #00559b;
+  outline: none;
+}
+
+.submitBtn {
+  width: 375px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 2.9rem;
+  background-color: #00559b;
+  font-weight: 900;
 }
